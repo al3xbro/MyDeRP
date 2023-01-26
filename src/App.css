@@ -38,11 +38,3 @@
   }
 }
 
-.flex-container {
-  display: flex;
-}
-
-.flex-container div {
-  margin: 10px;
-  flex: 1;
-}

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../App.css'
+import './components.css'
 import Select from 'react-select';
 
 const courses = [
@@ -10,11 +10,7 @@ const courses = [
   {label: 'CS 155', value: 'CS 155'},
 ]
 
-var completed_courses
-
-
-
-export default function CourseDropdown() {
+function CourseDropdown() {
 
   return (
     <Select
@@ -24,3 +20,5 @@ export default function CourseDropdown() {
     />
   )
 }
+
+export default CourseDropdown;

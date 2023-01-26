@@ -4,14 +4,14 @@ import CourseDropdown from './components/CourseDropdown';
 function App() {
   return (
     <>
-      <div class="flex-container">
-        <div class="addExCredit">
+      <div className="flex-container">
+        <div className="addExCredit">
           <CourseDropdown />
         </div>
-        <div class="exCredit">
+        <div className="exCredit">
           <CourseDropdown />
         </div>
-        <div class="req">
+        <div className="req">
           <CourseDropdown />
         </div>
       </div>
