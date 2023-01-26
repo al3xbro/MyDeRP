@@ -7,7 +7,16 @@ function App() {
     <>
       <div className="flex-container">
         <div className="addExCredit">
-          <Course code={"LEBRON 45"} title={"intro to nba"} desc={"learn to dunk"} prereqs={"get drafted"} reqs={"high school basketball"} />
+          <ul>
+            <li><Course code={"CS 46A"} title={"intro to nba"} desc={"learn to dunk"} prereqs={"get drafted"} reqs={"high school basketball"} /></li>
+            <li><Course code={"CS 46B"} title={"intro to nba"} desc={"learn to dunk"} prereqs={"get drafted"} reqs={"high school basketball"} /></li>
+            <li><Course code={"CS 46A"} title={"intro to nba"} desc={"learn to dunk"} prereqs={"get drafted"} reqs={"high school basketball"} /></li>
+            <li><Course code={"CS 46B"} title={"intro to nba"} desc={"learn to dunk"} prereqs={"get drafted"} reqs={"high school basketball"} /></li>
+            <li><Course code={"CS 46A"} title={"intro to nba"} desc={"learn to dunk"} prereqs={"get drafted"} reqs={"high school basketball"} /></li>
+            <li><Course code={"CS 46B"} title={"intro to nba"} desc={"learn to dunk"} prereqs={"get drafted"} reqs={"high school basketball"} /></li>
+            <li><Course code={"CS 46A"} title={"intro to nba"} desc={"learn to dunk"} prereqs={"get drafted"} reqs={"high school basketball"} /></li>
+            <li><Course code={"CS 46B"} title={"intro to nba"} desc={"learn to dunk"} prereqs={"get drafted"} reqs={"high school basketball"} /></li>
+          </ul>
         </div>
         <div className="exCredit">
           <CourseDropdown />
