@@ -2,8 +2,12 @@ h2 {
     margin-top: 0px;
 }
 
-.tile {
-    border: 1px solid lightgray;
+.Course-tile {
+    border: 2px solid lightgray;
     padding: 20px;
     border-radius: 4px;
+}
+
+.Course-tile:hover {
+    border-color: gray;
 }
