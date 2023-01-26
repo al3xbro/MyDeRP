@@ -28,6 +28,21 @@
   color: #61dafb;
 }
 
+.addExCredit {
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 20px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container div {
+  margin: 10px;
+  flex: 1;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -37,4 +52,3 @@
     transform: rotate(360deg);
   }
 }
-

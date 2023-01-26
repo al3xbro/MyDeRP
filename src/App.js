@@ -7,9 +7,7 @@ function App() {
     <>
       <div className="flex-container">
         <div className="addExCredit">
-          <ul>
-            <li><Course code={"LEBRON 45"} title={"intro to nba"} desc={"learn to dunk"} prereqs={"get drafted"} reqs={"high school basketball"}/></li>
-          </ul>
+          <Course code={"LEBRON 45"} title={"intro to nba"} desc={"learn to dunk"} prereqs={"get drafted"} reqs={"high school basketball"} />
         </div>
         <div className="exCredit">
           <CourseDropdown />
