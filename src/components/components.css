@@ -1,20 +1,23 @@
-h2 {
-    margin-top: 0px;
-}
-
-h1 {
+.courseCode {
     text-align: center;
+    font-size: 30px;
+    font-weight: 500;
     vertical-align: bottom;
     border-radius: 5px;
     margin: 0px;
     background-color: lightblue;
-    border: 2px solid gray;
 }
 
-.collapsible {
-    border: 2px solid gray;
+.Collapsible__contentInner {
+    padding: 1vh;
 }
 
-h1:hover {
+.Collapsible {
+
+    border: 2px solid gray;
+    border-radius: 6px;
+}
+
+.courseCode:hover {
     background-color: lightgrey;
 }
