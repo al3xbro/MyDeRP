@@ -13,9 +13,9 @@
 }
 
 .Collapsible {
-
     border: 2px solid gray;
     border-radius: 6px;
+    transition-delay: 200;
 }
 
 .courseCode:hover {
