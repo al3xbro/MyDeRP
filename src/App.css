@@ -67,6 +67,7 @@ ul {
   padding-bottom: 3vh;
   border-radius: 6px;
   border: 2px solid black;
+  overflow-y: scroll;
 }
 
 .req {

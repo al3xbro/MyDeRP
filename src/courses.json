@@ -1,0 +1,39 @@
+{
+    "courses":{
+        "CS 46A": 
+        {   
+            "name": "Introduction to Programming", 
+            "units": 4, 
+            "prerequisites": [], 
+            "requirement": "Major Requirement", 
+            "description": "Basic skills and concepts of computer programming in an object-oriented approach using Java. Classes, methods and argument passing, control structures, iteration. Basic graphical user interface programming. Problem solving, class discovery and stepwise refinement. Programming and documentation style. Weekly hands-on activity."
+        },
+
+        "CS 46B":
+        {   
+            "name": "Introduction to Data Structures", 
+            "units": 4, 
+            "prerequisites": ["CS 46A"], 
+            "requirement": "Major Requirement", 
+            "description": "Stacks and queues, recursion, lists, dynamic arrays, binary search trees. Iteration over collections. Hashing. Searching, elementary sorting. Big-O notation. Standard collection classes. Weekly hands-on activity."
+        },
+
+        "CS 47":
+        {   
+            "name": "Introduction to Computer Systems", 
+            "units": 3, 
+            "prerequisites": ["CS 46B", "MATH 42"], 
+            "requirement": "Major Requirement", 
+            "description": "Instruction sets, assembly language and assemblers, linkers and loaders, data representation and manipulation, interrupts, pointers, function calls, argument passing, and basic gate-level digital logic design."
+        },
+
+        "CS 146":
+        {   
+            "name": "Data Structures and Algorithms", 
+            "units": 3, 
+            "prerequisites": ["CS 46B", "MATH 30", "MATH 42"], 
+            "requirement": "Major Requirement", 
+            "description": "Implementations of advanced tree structures, priority queues, heaps, directed and undirected graphs. Advanced searching and sorting (radix sort, heapsort, mergesort, and quicksort). Design and analysis of data structures and algorithms. Divide-and-conquer, greedy, and dynamic programming algorithm design techniques."
+        }
+    }
+}

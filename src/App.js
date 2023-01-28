@@ -1,9 +1,11 @@
 import './App.css';
 import CourseList from './components/CourseList';
+import GradReqs, { adjustUnits } from './components/GradReqs';
 import React, { useReducer } from 'react'
 
-var courses = ["CS 46A", "CS 46B", "CS 47", "CS 146"];
+var courses = ["CS 146", "CS 46A", "CS 46B", "CS 47"];
 var completed_courses = [];
+var course_info = require('./courses.json')["courses"]
 
 function App() {
 
@@ -14,21 +16,23 @@ function App() {
   }
 
   const addCompletedCourse=(e)=>{
-    console.log("Course added")
     let transferedCourse = e.dataTransfer.getData("code")
     if (!completed_courses.includes(transferedCourse)){
       courses.splice(courses.indexOf(transferedCourse), 1)
       completed_courses.push(transferedCourse)
+      completed_courses.sort()
+      adjustUnits(course_info[transferedCourse]["requirement"], -4)
     }
     forceUpdate()
   }
 
   const removeCompletedCourse=(e)=>{
-    console.log("Course added")
     let transferedCourse = e.dataTransfer.getData("code")
     if (!courses.includes(transferedCourse)){
       completed_courses.splice(completed_courses.indexOf(transferedCourse), 1)
       courses.push(transferedCourse)
+      courses.sort()
+      adjustUnits(course_info[transferedCourse]["requirement"], 4)
     }
     forceUpdate()
   }
@@ -51,7 +55,7 @@ function App() {
         </div>
         <div className="req">
           <div className="listName">Graduation Requirements</div>
-
+            <GradReqs />
         </div>
       </div>
     </>

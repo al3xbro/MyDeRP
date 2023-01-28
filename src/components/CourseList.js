@@ -1,11 +1,13 @@
 import React from 'react'
 import Course from './Course'
 
+let course_info = require('../courses.json')["courses"]
+
+
 export default function CourseList({ codes }) {
-    
     return (
         codes.map((code) => (
-            <li><Course code={code} title={"Introduction to Programming"} units="4" desc={"Basic skills and concepts of computer programming in an object-oriented approach using Java. Classes, methods and argument passing, control structures, iteration. Basic graphical user interface programming. Problem solving, class discovery and stepwise refinement. Programming and documentation style. Weekly hands-on activity."} prereqs={"Math Enrollment Category M-I, M-II, or M-III, or MATH 1"} reqs={"Major Requirement"} /></li>
+            <li><Course code={code} title={course_info[code]["name"]} units={course_info[code]["units"]} desc={course_info[code]["description"]} prereqs={course_info[code]["prerequisites"]} reqs={course_info[code]["requirement"]} /></li>
         ))
     );
 }

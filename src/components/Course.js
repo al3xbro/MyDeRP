@@ -7,7 +7,6 @@ import './components.css'
 function Course({ code, title, units, desc, prereqs, reqs }) {
 
   const dragStarted = (e, course_code) => {
-    console.log("drag started")
     e.dataTransfer.setData("code", course_code)
   } 
 
