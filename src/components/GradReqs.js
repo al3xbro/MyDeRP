@@ -1,4 +1,5 @@
 import React from 'react'
+import "./components.css"
 
 let uni_req = 35;
 let maj_prep = 33;
@@ -6,8 +7,8 @@ let maj_req = 38;
 let maj_el = 14;
 let tot_units = 120;
 
-export function adjustUnits(cat, amt){
-    switch(cat){
+export function adjustUnits(cat, amt) {
+    switch (cat) {
         case "University Requirement":
             uni_req += amt;
             break;
@@ -27,14 +28,13 @@ export function adjustUnits(cat, amt){
 }
 
 export default function GradReqs() {
-  return (
-    <>
-        <h3>Unit Requirements</h3>
-        <h5>University Requirements&emsp;&emsp;{uni_req}</h5>
-        <h5>Major Preparation&emsp;&emsp;&emsp;&emsp;&emsp;{maj_prep}</h5>
-        <h5>Major Requirements&emsp;&emsp;&emsp;&emsp;{maj_req}</h5>
-        <h5>Major Electives&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;{maj_el}</h5>
-        <h4>Units Remaining&emsp;&emsp;&emsp;{tot_units}</h4>
-    </>
-  )
+    return (
+        <>
+            <h5>University Requirements&emsp;&emsp;{uni_req}</h5>
+            <h5>Major Preparation&emsp;&emsp;&emsp;&emsp;&emsp;{maj_prep}</h5>
+            <h5>Major Requirements&emsp;&emsp;&emsp;&emsp;{maj_req}</h5>
+            <h5>Major Electives&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;{maj_el}</h5>
+            <h4>Units Remaining&emsp;&emsp;&emsp;{tot_units}</h4>
+        </>
+    )
 }

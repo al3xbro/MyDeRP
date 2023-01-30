@@ -8,7 +8,7 @@ function Course({ code, title, units, desc, prereqs, reqs }) {
 
   const dragStarted = (e, course_code) => {
     e.dataTransfer.setData("code", course_code)
-  } 
+  }
 
   return (
     <div draggable onDragStart={(e) => dragStarted(e, code)}>
